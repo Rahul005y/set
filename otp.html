@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP Generator</title>
+
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#eef1f5;
+            font-family:Arial;
+        }
+
+        .box{
+            width:300px;
+            text-align:center;
+        }
+
+        button{
+            padding:12px 20px;
+            background:blue;
+            color:#fff;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:disabled{
+            background:gray;
+            cursor:not-allowed;
+        }
+
+        #otp{
+            margin-top:20px;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        #timer{
+            margin-top:10px;
+            font-size:20px;
+            color:#333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+
+    <button id="otpBtn">Get OTP</button>
+
+    <div id="otp"></div>
+    <div id="timer"></div>
+
+</div>
+
+<script src="otp.js"> 
+
+</script>
+
+</body>
+</html>
